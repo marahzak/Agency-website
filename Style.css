@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "ThmanyahSans";
+  src: url("thmanyahsans/otf/thmanyahsans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "swsh" on;
+}
+
+@font-face {
+  font-family: "ThmanyahSans";
+  src: url("thmanyahsans/otf/thmanyahsans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-feature-settings: "swsh" on;
+}
+:root {
+  --primary-color: #c5f74f;
+  --secondry-color: #111827;
+  --tertiary-color: hsl(220.9091deg 39.2857% 15%);
+}
+html {
+  scroll-behavior: smooth; /* تجعل الانتقال ناعماً (انسيابي) بدلاً من القفز المفاجئ */
+  scroll-padding-top: 100px; /* تترك مسافة من الأعلى تساوي ارتفاع الناف بار لكي لا تغطي العنوان */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-feature-settings: "swsh" on;
+  font-family: "thmanyah sans";
+  background-color: hsla(221, 25%, 8%, 1);
+  color: #fff;
+}
+/* Nav bar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: hsla(221, 25%, 8%, 1);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 96px;
+  padding-block: 24px;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.primary-btn {
+  display: flex;
+  padding: 12px 16px;
+  background-color: var(--primary-color);
+  color: var(--secondry-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 99px;
+}
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 96px;
+  min-height: 80vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px; /* يتحكم بعرض النص لكي لا يتمدد بشكل مزعج على الشاشات الكبيرة */
+}
+.hero-section h1 {
+  color: #f8faf5;
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.hero-section p {
+  color: hsl(0deg 0% 73.9423%);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 44px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.secondry-btn {
+  display: flex;
+  padding: 12px 16px;
+  color: black;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 99px;
+  text-decoration: none;
+  text-align: center;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 96px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1034px;
+  width: 100%;
+  align-items: flex-start;
+}
+.about-content h1 {
+  color: #fff;
+  text-align: right;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 78.4px */
+}
+.about-content p {
+  color: hsl(0deg 0% 59.3269%);
+  text-align: right;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 96px;
+  margin-bottom: 200px;
+  align-items: center;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  max-width: 1248px;
+  width: 100%;
+}
+.service-content h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 76.8px */
+}
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  gap: 16px;
+  padding: 24px;
+  background-color: var(--tertiary-color);
+  border-radius: 16px;
+}
+.card h2 {
+  color: #fff;
+  text-align: right;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 44.8px */
+}
+.card p {
+  color: hsl(0deg 0% 59.3269%);
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+/* Our work */
+.our-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 96px;
+  margin-bottom: 200px;
+}
+.work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.work-content h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 76.8px */
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+}
+.work-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+.card-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10; /* يحافظ على تناسب الصورة مهما تمدد عرض الشاشة */
+  object-fit: cover;
+  border-radius: 16px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+.card-info h3 {
+  color: #fff;
+  text-align: right;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 44.8px */
+}
+.card-info p {
+  color: hsl(0deg 0% 59.3269%);
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.project-steps {
+  display: flex;
+  padding-inline: 96px;
+  margin-bottom: 200px;
+}
+.project-content {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.project-content h2 {
+  color: #fff;
+  text-align: right;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 89.6px */
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  width: 100%;
+}
+.step1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  text-align: right;
+}
+.step1 h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 44.8px */
+}
+.step1 p {
+  color: hsl(0deg 0% 59.3269%);
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+/* الحاوية الخارجية للفوتر */
+.site-footer {
+  width: 100%;
+  padding: 44px 36px; /* أو 44px 96px لو حابة نفس محاذاة الهيدر */
+  box-sizing: border-box;
+}
+
+/* البطاقة الخضراء الكبيرة */
+.footer-card {
+  background-color: #b4e543; /* درجة الأخضر الفاتح من التصميم */
+  color: #0d1117; /* لون النص الداكن */
+  border-radius: 40px; /* الزوايا الدائرية الكبيرة */
+  padding-top: 44px;
+  padding-bottom: 180px;
+  padding-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* قائمة الروابط العلوية */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 112px; /* المسافة 111.5px بين الروابط والعنوان */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #0d1117;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+/* منطقة العنوان والزر */
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 650px; /* لكي ينزل النص على سطرين مثل التصميم تماماً */
+}
+
+.footer-cta h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0d1117;
+}
+
+/* زر تواصل معنا الداكن */
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #0d1117;
+  color: #b4e543; /* النص بلون البطاقة الخضراء */
+  padding: 12px 26px; /* مسافة أكبر من جهة النص وأقل من جهة الدائرة */
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.footer-btn:hover {
+  transform: scale(1.03);
+}
+
+/* التجاوب مع شاشات الجوال */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 24px 16px;
+  }
+  .footer-card {
+    padding-bottom: 90px;
+    border-radius: 28px;
+  }
+  .footer-links {
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+  .footer-cta h2 {
+    font-size: 32px;
+  }
+}
