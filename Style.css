@@ -1,14 +1,16 @@
 @font-face {
-  font-family: "ThmanyahSans";
-  src: url("thmanyahsans/otf/thmanyahsans-Regular.otf") format("opentype");
+  font-family: "thmanyahSans";
+  src: url("project2/thmanyahsans/otf/thmanyahsans-Regular.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
   font-feature-settings: "swsh" on;
 }
 
 @font-face {
-  font-family: "ThmanyahSans";
-  src: url("thmanyahsans/otf/thmanyahsans-Bold.otf") format("opentype");
+  font-family: "thmanyahSans";
+  src: url("project2\thmanyahsans\otf\thmanyahsans-Black.otf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
   font-feature-settings: "swsh" on;
