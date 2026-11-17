@@ -29,8 +29,6 @@ html {
 }
 
 body {
-  font-feature-settings: "swsh" on;
-  font-family: "thmanyah sans";
   background-color: hsla(221, 25%, 8%, 1);
   color: #fff;
 }
