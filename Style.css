@@ -1,3 +1,7 @@
+html,
+body {
+  font-family: "ThmanyahSans", sans-serif;
+}
 @font-face {
   font-family: "thmanyahSans";
   src: url("project2/thmanyahsans/otf/thmanyahsans-Regular.otf")
