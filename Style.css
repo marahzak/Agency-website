@@ -1,9 +1,5 @@
-html,
-body {
-  font-family: "thmanyahSans";
-}
 @font-face {
-  font-family: "thmanyahSans";
+  font-family: "thmanyahsans";
   src: url("thmanyahsans/otf/thmanyahsans-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
@@ -11,12 +7,18 @@ body {
 }
 
 @font-face {
-  font-family: "thmanyahSans";
+  font-family: "thmanyahsans";
   src: url("thmanyahsans/otf/thmanyahsans-Black.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-feature-settings: "swsh" on;
 }
+
+html,
+body {
+  font-family: "thmanyahsans";
+}
+
 :root {
   --primary-color: #c5f74f;
   --secondry-color: #111827;
