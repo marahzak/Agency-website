@@ -1,11 +1,10 @@
 html,
 body {
-  font-family: "ThmanyahSans", sans-serif;
+  font-family: "thmanyahSans";
 }
 @font-face {
   font-family: "thmanyahSans";
-  src: url("project2/thmanyahsans/otf/thmanyahsans-Regular.otf")
-    format("opentype");
+  src: url("thmanyahsans/otf/thmanyahsans-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-feature-settings: "swsh" on;
@@ -13,8 +12,7 @@ body {
 
 @font-face {
   font-family: "thmanyahSans";
-  src: url("project2\thmanyahsans\otf\thmanyahsans-Black.otf")
-    format("opentype");
+  src: url("thmanyahsans/otf/thmanyahsans-Black.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
   font-feature-settings: "swsh" on;
