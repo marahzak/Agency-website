@@ -794,3 +794,289 @@ header {
     transform: scale(1.03);
   }
 }
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 24px;
+    padding-block: 24px;
+  }
+  .nav-links {
+    display: none;
+  }
+  header .primary-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 24px;
+    min-height: 60vh;
+  }
+  .hero-section h1 {
+    color: #f8faf5;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  .hero-section p {
+    color: hsl(0deg 0% 73.9423%);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 44px;
+  }
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .primary-btn {
+    display: flex;
+    padding: 12px 16px;
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 99px;
+  }
+  .secondry-btn {
+    display: flex;
+    padding: 12px 16px;
+    color: black;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 99px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 24px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1034px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .about-content h1 {
+    color: #fff;
+    text-align: right;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 78.4px */
+  }
+  .about-content p {
+    color: hsl(0deg 0% 59.3269%);
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.2px */
+  }
+  /* Service */
+  .service {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 24px;
+    margin-bottom: 200px;
+    align-items: center;
+  }
+  .service-content h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 76.8px */
+  }
+  .card h2 {
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 44.8px */
+  }
+  .card p {
+    color: hsl(0deg 0% 59.3269%);
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  /* Our Work Section */
+  .our-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 24px;
+    margin-bottom: 200px;
+  }
+  .work-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 76.8px */
+  }
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+  .card-info h3 {
+    color: #fff;
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 44.8px */
+  }
+  /* Project steps */
+  .project-steps {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 24px;
+    margin-bottom: 150px;
+  }
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+  .project-content h2 {
+    color: #fff;
+    text-align: right;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 89.6px */
+  }
+  .step1 h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 44.8px */
+  }
+  .step1 p {
+    color: hsl(0deg 0% 59.3269%);
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+  /* site-footer */
+  .site-footer {
+    width: 100%;
+    padding: 12px; /* أو 44px 96px لو حابة نفس محاذاة الهيدر */
+    box-sizing: border-box;
+  }
+
+  /* البطاقة الخضراء الكبيرة */
+  .footer-card {
+    background-color: #b4e543; /* درجة الأخضر الفاتح من التصميم */
+    color: #0d1117; /* لون النص الداكن */
+    border-radius: 40px; /* الزوايا الدائرية الكبيرة */
+    padding-top: 44px;
+    padding-bottom: 180px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* قائمة الروابط العلوية */
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 112px; /* المسافة 111.5px بين الروابط والعنوان */
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #0d1117;
+    font-size: 12px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    opacity: 0.7;
+  }
+
+  /* منطقة العنوان والزر */
+  .footer-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 650px; /* لكي ينزل النص على سطرين مثل التصميم تماماً */
+  }
+
+  .footer-cta h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #0d1117;
+  }
+
+  /* زر تواصل معنا الداكن */
+  .footer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #0d1117;
+    color: #b4e543; /* النص بلون البطاقة الخضراء */
+    padding: 12px 26px; /* مسافة أكبر من جهة النص وأقل من جهة الدائرة */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+  }
+
+  .footer-btn:hover {
+    transform: scale(1.03);
+  }
+}
