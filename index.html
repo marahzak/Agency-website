@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agency Website</title>
     <link rel="stylesheet" href="Style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!--Nav bar-->
@@ -12,7 +13,7 @@
       <nav class="navbar">
         <a href="#" class="logo">تجرِبة</a>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="#">الرئيسية</a></li>
           <li><a href="#work">أعمالنا</a></li>
           <li><a href="#">اراء العملاء</a></li>
@@ -20,6 +21,17 @@
         </ul>
 
         <a href="#" class="primary-btn">اطلب عرض سعر</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
       </nav>
     </header>
 
